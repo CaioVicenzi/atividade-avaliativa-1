@@ -1,0 +1,49 @@
+algoritmo mediaDoAluno;
+// Síntese
+//  Objetivo:  Leia 2 valores A e B, que correspondem a 2 notas de um aluno. A seguir, calcule a
+// média do aluno, sabendo que a nota A tem peso 3.5 e a nota B tem peso 7.5 (A soma
+// dos pesos portanto é 11). Assuma que cada nota pode ir de 0 até 10.0.
+
+//  Entrada : duas notas de um aluno
+//  Saída   : media das notas do aluno
+
+
+principal
+	// Declarações
+	real notaA, notaB, media;
+	logico notasValidas;
+
+	// Instruções
+
+	//pedindo as notas para o usuário
+	escreva("Digite sua primeira nota: ");
+	leia(notaA);
+	escreva("Digite sua segunda nota: ");
+	leia(notaB);
+
+
+	//a lógica afrente consiste no seguinte: a variável notasValidas começa verdadeira e fica falso se alguma das notas que foram
+	//passadas forem maior(es) que 10 ou menor(es) que 0, no final do programa ele verifica se a variável notasValidas continua
+	//verdadeiro e em caso afirmativo ele calcula a media, se alguma das notas forem inválidas, o programa não calculará a media.
+	notasValidas = verdadeiro;
+
+	se(notaA > 10 ou notaA < 0) entao
+		escreval("Nota A inválida!");
+		notasValidas = falso;
+	fimSe
+
+	se(notaB > 10 ou notaB < 0) entao
+		escreval("Nota B inválida!");
+		notasValidas = falso;
+	fimSe
+
+	se(notasValidas == verdadeiro) entao
+		media = ((notaA * 3.5) + (notaB * 7.5)) / 11;
+		escreva("A media das suas notas é: " + media);
+	senao
+		escreva("Não foi possível calcular a media pois um ou mais dados foram informados incorretamente");	
+	fimSe
+
+
+
+fimPrincipal

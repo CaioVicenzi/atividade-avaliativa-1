@@ -1,0 +1,49 @@
+algoritmo funcionario;
+// Síntese
+//  Objetivo:  Escreva um programa que leia o nome do funcionário, o sexo (F ou M), o número de
+// matrícula do funcionário, o número de horas trabalhadas, o valor que recebe por hora
+// e calcule o salário desse funcionário. A seguir, mostre todos os dados na tela, os dados
+// de entrada e os dados de saída.
+
+//  Entrada : o nome do funcionario, o sexo, o numero de matrícula, o número de horas trabalhadas e o valor que o usuário recebe por
+// hora
+//  Saída   : o salário desse funcionário e todos os demais dados.
+
+
+principal
+	// Declarações
+	
+	inteiro numeroDeMatricula, numeroDeHorasTrabalhadas;
+	caracter sexo;
+	real valorQueOFuncionarioRecebePorHora;
+	cadeia nomeFuncionario;
+	// Instruções
+
+	escreval("Olá funcionário! :D");
+	escreva("Digite o seu numeroDeMatrícula: ");
+	leia(numeroDeMatricula);
+	escreva("Digite o seu nome: ");
+	leia(nomeFuncionario);
+	escreva("digite seu sexo(m ou f): ");
+	leia(sexo);
+
+	se(sexo!= 'm' ou sexo != 'f' ) entao
+		escreva("Sexo inválido!");
+	senao
+		escreva("Digite o numero de horas que você trabalha: ");
+		leia(numeroDeHorasTrabalhadas);
+		escreva("Digite o quanto você recebe por hora: ");
+		leia("valorQueOFuncionarioRecebePorHora");
+		escreval("O seu nome é: ", nomeFuncionario);
+		se (sexo == 'f') entao
+			escreval("O seu sexo é: feminino");
+		senao
+			escreval("O seu sexo é masculino");
+			escreval("O seu numero de horas trabalhadas é: ", numeroDeHorasTrabalhadas);
+			escreval("Você recebe " + valorQueOFuncionarioRecebePorHora + " por hora");
+			escreva("O seu salário é: " + valorQueOFuncionarioRecebePorHora * numeroDeHorasTrabalhadas);
+		fimSe
+	fimSe
+	
+
+fimPrincipal

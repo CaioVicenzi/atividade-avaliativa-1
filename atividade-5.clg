@@ -1,0 +1,30 @@
+algoritmo construtor;
+// Síntese
+//  Objetivo: Fazer um algoritmo para auxiliar um construtor a descobrir a quantidade de rolos e a
+// quantidade de metros avulsos de fios que ele precisa adquirir. Sabe-se que o
+// construtor tem a quantidade total de fios em metros a serem utilizados na instalação
+// elétrica da obra e que cada rolo de fio tem 50 metros.
+
+//  Entrada : metros
+//  Saída   : rolos e metragem avulsa 
+
+
+principal
+	// Declarações
+	inteiro metros, rolos, metrosAvulsos;
+	// Instruções
+
+	//pedindo quantos metros vão ser utilizados na instalação elétrica da obra...
+	escreva("Digite a quantidade de metros a seres utilizados na instalação elétrica da obra: ");
+	leia(metros);
+
+	//  calculando quantos rolos precisam, a quantia de quantos rolos precisam é a quantidade de metros  dividido por 50 somados
+	// a um porque eu estou considerando que o construtor vai precisar de fios suficientes para conseguir terminar a obra com sucesso
+	rolos = (metros/ 50) + 1;
+	// calculando quantos metros de fio vão sobrar...
+	metrosAvulsos = 50 - (metros mod 50);
+
+	// imprimindo na tela o resultado (saída)
+	escreva("Você vai precisar de " + rolos + " rolo(s).");
+	escreva("E vai sobrar " + metrosAvulsos + " metro(s) de fio"); 
+fimPrincipal

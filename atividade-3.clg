@@ -1,0 +1,29 @@
+algoritmo calculadorDeMediaAritmeticaDeTresValores;
+// Síntese
+//  Objetivo:  Construa um algoritmo que calcule a média aritmética de 3 números quaisquer
+//  fornecidos pelo usuário
+//  Entrada : 3 numeros quaisquer
+//  Saída   : a media aritmetica desses 3 numeros
+
+
+principal
+	// Declarações
+	real numero1, numero2, numero3, mediaDosNumeros;
+
+	// Instruções
+	escreval("Programa para calcular media de 3 numeros :D");
+
+	// pedindo e lendo os 3 numeros do usuário:
+	escreva("Digite o primeiro número: ");
+	leia(numero1);
+	escreva("Digite o segundo número: ");
+	leia(numero2);
+	escreva("Digite o terceiro número: ");
+	leia(numero3);
+
+ 	//calculando e imprimindo na tela a media dos numeros que o usuário passou:
+	mediaDosNumeros = (numero1 + numero2 + numero3) / 3;
+	escreva("A media dos numeros que você digitou é: " + mediaDosNumeros);
+	
+
+fimPrincipal

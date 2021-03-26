@@ -1,0 +1,24 @@
+algoritmo areaCírculo;
+// Síntese
+//  Objetivo:  Construa um algoritmo que calcule a área de um círculo cujo raio é fornecido pelo
+//  usuário (use área= 3.14 x raio²)
+//  Entrada : O raio de um determinado círculo
+//  Saída   : A área desse mesmo círculo
+
+
+principal
+	// Declarações
+	real area, raio;
+
+	// Instruções
+
+	//pedindo o raio do círculo para o usuário
+	escreva("Digite o raio de um círculo: ");
+	leia(raio);
+
+	//calculando a área e imprimindo para o usuário
+	area = (raio * raio) * 3.14;
+	escreva("A área do círculo que você digitou é: " + area);
+
+
+fimPrincipal

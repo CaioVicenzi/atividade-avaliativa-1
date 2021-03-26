@@ -1,0 +1,20 @@
+algoritmo horasEmMinutos;
+// Síntese
+//  Objetivo:  Construa um algoritmo que leia um número inteiro de horas e mostre ao usuário o correspondente em minutos e segundos destas horas
+//  Entrada : Valor em horas
+//  Saída   : Valor desse tempo em minutos e em segundos
+
+principal
+	// Declarações
+		real valorEmHoras, valorEmMinutos, valorEmSegundos;
+	// Instruções
+		imprima("Digite o valor em horas: ");
+		leia(valorEmHoras);
+		valorEmMinutos = valorEmHoras * 60;
+		valorEmSegundos = valorEmSegundos * 60;
+		
+		imprima("O valor em minutos do seu número é: " + valorEmMinutos)
+		imprima("O valor em segundos do seu número é: " + valorEmSegundos)
+
+
+fimPrincipal
